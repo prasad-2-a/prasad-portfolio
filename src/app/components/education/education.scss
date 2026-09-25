@@ -1,0 +1,200 @@
+.education-section {
+  padding: 120px 24px;
+
+  background: #0d0d13;
+
+  color: #ffffff;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.section-heading {
+  max-width: 760px;
+
+  margin-bottom: 65px;
+}
+
+.section-heading span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #9b9bff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  margin: 0 0 18px;
+
+  font-size: clamp(36px, 5vw, 60px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2.5px;
+}
+
+.section-heading p {
+  margin: 0;
+
+  color: #90909a;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* Education list */
+
+.education-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.education-card {
+  display: grid;
+
+  grid-template-columns: 150px minmax(0, 1fr);
+
+  gap: 45px;
+
+  padding: 32px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 12px;
+
+  background: #121219;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(155, 155, 255, 0.35);
+
+  background: #15151d;
+}
+
+.education-year {
+  padding-top: 4px;
+
+  color: #777783;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 13px;
+}
+
+.education-level {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #9b9bff;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+.education-content h3 {
+  margin: 0 0 12px;
+
+  font-size: 24px;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.5px;
+}
+
+.education-institute {
+  margin: 0 0 5px;
+
+  color: #c5c5cd;
+
+  font-size: 15px;
+}
+
+.education-university {
+  margin: 0;
+
+  color: #777783;
+
+  font-size: 13px;
+}
+
+.education-result {
+  display: inline-block;
+
+  margin-top: 22px;
+
+  padding: 7px 11px;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-radius: 5px;
+
+  background: #1a1a23;
+
+  color: #8f8f9a;
+
+  font-size: 12px;
+}
+
+.education-result strong {
+  color: #ffffff;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .education-card {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    padding: 25px;
+  }
+
+  .education-year {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .education-section {
+    padding: 85px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .education-content h3 {
+    font-size: 22px;
+  }
+
+}
